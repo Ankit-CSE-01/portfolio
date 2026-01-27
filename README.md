@@ -340,7 +340,7 @@ This project is open source and available for educational purposes.
 ## 👤 Author
 
 **Portfolio Student**  
-Email: your@email.com  
+Email: 73ankitkrsingh@gmail.com 
 GitHub: (https://github.com/Ankit-CSE-01/portfolio)
 
 ---
