@@ -341,7 +341,7 @@ This project is open source and available for educational purposes.
 
 **Portfolio Student**  
 Email: your@email.com  
-GitHub: [@yourusername](https://github.com/yourusername)
+GitHub: (https://github.com/Ankit-CSE-01/portfolio)
 
 ---
 

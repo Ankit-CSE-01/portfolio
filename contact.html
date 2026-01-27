@@ -17,7 +17,8 @@
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -87,8 +88,8 @@
                             <span class="error-message" id="messageError"></span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        <span class="success-message" id="successMessage"></span>
+                        <button type="submit" class="btn btn-primary" aria-label="Send message form">Send Message</button>
+                        <span class="success-message" id="successMessage" role="alert" aria-live="polite"></span>
                     </form>
                 </div>
 

@@ -2,7 +2,7 @@
    CSS VARIABLES - Color Theme & Typography
    ========================================== */
 :root {
-    /* Colors */
+    /* Colors - Light Mode */
     --primary-color: #6366f1;
     --secondary-color: #ec4899;
     --dark-bg: #0f172a;
@@ -12,6 +12,19 @@
     --border-color: #e2e8f0;
     --success-color: #10b981;
     --error-color: #ef4444;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+}
+
+/* Dark Mode Theme */
+body.dark-mode {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --border-color: #334155;
 
     /* Typography */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -64,8 +77,9 @@ body {
     font-family: var(--font-family);
     font-size: var(--font-size-base);
     line-height: 1.6;
-    color: var(--text-dark);
-    background-color: #fff;
+    color: var(--text-primary, var(--text-dark));
+    background-color: var(--bg-primary, #fff);
+    transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 img {
@@ -78,6 +92,36 @@ a {
     text-decoration: none;
     color: inherit;
     transition: color var(--transition-normal);
+}
+
+/* ==========================================
+   THEME TOGGLE BUTTON
+   ========================================== */
+.theme-toggle {
+    background: none;
+    border: 2px solid var(--border-color);
+    color: var(--text-primary, var(--text-dark));
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-normal);
+    margin-left: auto;
+}
+
+.theme-toggle:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+.theme-toggle:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
 }
 
 /* ==========================================
