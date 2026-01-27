@@ -139,7 +139,8 @@ a {
 .navbar {
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     box-shadow: var(--shadow-md);
     z-index: 1000;
     transition: all var(--transition-normal);
@@ -170,7 +171,7 @@ a {
 }
 
 .nav-link {
-    color: var(--text-dark);
+    color: var(--text-primary);
     font-weight: 500;
     position: relative;
     padding-bottom: var(--spacing-xs);
@@ -207,7 +208,7 @@ a {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: var(--text-dark);
+    background-color: var(--text-primary);
     border-radius: var(--border-radius-sm);
     transition: all var(--transition-normal);
 }
@@ -247,13 +248,13 @@ a {
 .hero-content h1 {
     font-size: var(--font-size-3xl);
     margin-bottom: var(--spacing-md);
-    color: var(--text-dark);
+    color: var(--text-primary);
     font-weight: 800;
 }
 
 .hero-content p {
     font-size: var(--font-size-lg);
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: var(--spacing-lg);
 }
 
@@ -296,7 +297,8 @@ a {
 }
 
 .btn-primary:hover {
-    background-color: #4f46e5;
+    background-color: var(--primary-color);
+    opacity: 0.9;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -317,14 +319,14 @@ a {
    ========================================== */
 .featured-projects {
     padding: var(--spacing-2xl) var(--spacing-lg);
-    background-color: var(--light-bg);
+    background-color: var(--bg-secondary);
 }
 
 .featured-projects h2 {
     text-align: center;
     font-size: var(--font-size-2xl);
     margin-bottom: var(--spacing-2xl);
-    color: var(--text-dark);
+    color: var(--text-primary);
 }
 
 .projects-grid {
@@ -338,7 +340,7 @@ a {
     flex: 1;
     min-width: 280px;
     max-width: 350px;
-    background: white;
+    background: var(--bg-primary);
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -375,11 +377,11 @@ a {
 .card-content h3 {
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-sm);
-    color: var(--text-dark);
+    color: var(--text-primary);
 }
 
 .card-content p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     font-size: var(--font-size-sm);
 }
@@ -417,6 +419,7 @@ a {
     text-align: center;
     font-size: var(--font-size-2xl);
     margin-bottom: var(--spacing-2xl);
+    color: var(--text-primary);
 }
 
 .skills-container {
@@ -435,7 +438,7 @@ a {
 
 .skill-name {
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--text-primary);
 }
 
 .skill-bar {
@@ -458,13 +461,14 @@ a {
    ========================================== */
 .about {
     padding: var(--spacing-2xl) var(--spacing-lg);
-    background-color: var(--light-bg);
+    background-color: var(--bg-primary);
 }
 
 .about .container h1 {
     font-size: var(--font-size-2xl);
     margin-bottom: var(--spacing-2xl);
     text-align: center;
+    color: var(--text-primary);
 }
 
 .about-content {
@@ -495,7 +499,7 @@ a {
 }
 
 .about-text p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: var(--spacing-md);
     line-height: 1.8;
 }
@@ -504,6 +508,7 @@ a {
     font-size: var(--font-size-lg);
     margin-top: var(--spacing-lg);
     margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
 }
 
 .about-list {
@@ -514,7 +519,7 @@ a {
 }
 
 .about-list li {
-    color: var(--text-dark);
+    color: var(--text-primary);
     padding-left: var(--spacing-lg);
     position: relative;
 }
@@ -591,7 +596,7 @@ a {
 }
 
 .timeline-date {
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-size: var(--font-size-sm);
     font-weight: 600;
 }
@@ -611,11 +616,12 @@ a {
     text-align: center;
     font-size: var(--font-size-2xl);
     margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
 }
 
 .section-subtitle {
     text-align: center;
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: var(--spacing-2xl);
     font-size: var(--font-size-lg);
 }
@@ -695,7 +701,7 @@ a {
 }
 
 .pricing-card {
-    background: white;
+    background: var(--bg-primary);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
     text-align: center;
@@ -712,6 +718,7 @@ a {
 .pricing-card h3 {
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
 }
 
 .price {
@@ -729,7 +736,7 @@ a {
 
 .pricing-features li {
     padding: var(--spacing-sm) 0;
-    color: var(--text-light);
+    color: var(--text-secondary);
 }
 
 .featured-badge {
@@ -760,6 +767,7 @@ a {
     text-align: center;
     font-size: var(--font-size-2xl);
     margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
 }
 
 .contact-wrapper {
@@ -771,7 +779,7 @@ a {
 }
 
 .contact-form {
-    background-color: var(--light-bg);
+    background-color: var(--bg-secondary);
     padding: var(--spacing-lg);
     border-radius: var(--border-radius-lg);
 }
@@ -785,7 +793,7 @@ a {
 .form-group label {
     font-weight: 600;
     margin-bottom: var(--spacing-xs);
-    color: var(--text-dark);
+    color: var(--text-primary);
 }
 
 .form-group input,
@@ -795,6 +803,9 @@ a {
     border-radius: var(--border-radius-md);
     font-family: inherit;
     font-size: var(--font-size-base);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
     transition: all var(--transition-normal);
 }
 
@@ -847,7 +858,7 @@ a {
 }
 
 .info-item p {
-    color: var(--text-light);
+    color: var(--text-secondary);
 }
 
 .info-item a {
@@ -863,8 +874,8 @@ a {
    FOOTER
    ========================================== */
 .footer {
-    background-color: var(--text-dark);
-    color: white;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
     padding: var(--spacing-xl) var(--spacing-lg);
     margin-top: var(--spacing-2xl);
 }
