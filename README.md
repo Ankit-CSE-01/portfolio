@@ -6,8 +6,8 @@ A modern, fully responsive portfolio website built with HTML5, CSS3, and JavaScr
 
 This portfolio website demonstrates a complete understanding of web development fundamentals and best practices. It includes multiple pages, a responsive design that works across all devices, smooth animations, and a fully functional contact form with validation.
 
-**Live Demo:** [GitHub Pages URL - Configure in Settings]  
-**Repository:** [Your GitHub Repository URL]
+**Live Demo:** [https://ankit-cse-01.github.io/portfolio/projects.html]  
+**Repository:** [https://github.com/Ankit-CSE-01/portfolio.git]
 
 ---
 
